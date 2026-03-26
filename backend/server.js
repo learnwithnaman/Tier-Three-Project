@@ -5,7 +5,14 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+// Updated CORS - allow all origins for now (for testing)
+app.use(cors({
+  origin: ['http://localhost:3000', 'http://18.117.128.169:3000', 'http://18.117.128.169:5000'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 
 // Routes

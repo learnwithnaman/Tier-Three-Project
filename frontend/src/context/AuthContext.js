@@ -4,7 +4,8 @@ import axios from 'axios';
 const AuthContext = createContext();
 export const useAuth = () => useContext(AuthContext);
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+// Use relative URL - will go through nginx proxy
+axios.defaults.baseURL = '/api';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -16,7 +17,10 @@ export function AuthProvider({ children }) {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       axios.get('/auth/me')
         .then(r => setUser(r.data.user))
-        .catch(() => { localStorage.removeItem('token'); delete axios.defaults.headers.common['Authorization']; })
+        .catch(() => { 
+          localStorage.removeItem('token'); 
+          delete axios.defaults.headers.common['Authorization']; 
+        })
         .finally(() => setLoading(false));
     } else setLoading(false);
   }, []);
