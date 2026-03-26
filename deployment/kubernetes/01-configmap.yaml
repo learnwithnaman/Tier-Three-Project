@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shopsphere-config
+  namespace: shopsphere
+data:
+  MONGO_URI: "mongodb://mongodb-service:27017/shopsphere"
+  NODE_ENV: "production"
+  PORT: "5000"
