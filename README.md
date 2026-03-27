@@ -4,11 +4,11 @@ Full Stack **3 Tier** E-Commerce application built with MERN stack (MongoDB, Exp
 
 ## 🖼️ Application Preview
 
-![ShopSphere UI](diagrams/1.jpg)
+![ShopSphere UI](diagrams/2.jpg)
 
 ## 🏗️ Architecture Diagram
 
-![Architecture Diagram](diagrams/2.png)
+![Architecture Diagram](diagrams/1.png)
 
 ## 📋 Table of Contents
 - [Application Preview](#️-application-preview)
