@@ -10,24 +10,6 @@ Full Stack **3 Tier** E-Commerce application built with MERN stack (MongoDB, Exp
 
 ![Architecture Diagram](diagrams/1.png)
 
-## 📋 Table of Contents
-- [Application Preview](#️-application-preview)
-- [Architecture Diagram](#️-architecture-diagram)
-- [Features](#-features)
-- [Tech Stack](#️-tech-stack)
-- [Project Structure](#-project-structure)
-- [Prerequisites](#-prerequisites)
-- [Deployment Options](#-deployment-options)
-  - [Option 1: Local Development](#option-1-local-development)
-  - [Option 2: Docker Compose](#option-2-docker-compose)
-  - [Option 3: AWS EKS (Production)](#option-3-aws-eks-production)
-- [API Endpoints](#-api-endpoints)
-- [Environment Variables](#-environment-variables)
-- [Monitoring & Logs](#-monitoring--logs)
-- [Troubleshooting](#-troubleshooting)
-- [Cleanup](#-cleanup)
-- [Conclusion](#-conclusion)
-
 ## ✨ Features
 
 - 🔐 **JWT Authentication** - Secure user registration and login
