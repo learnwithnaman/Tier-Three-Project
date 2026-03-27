@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: YOUR_AWS_ACCOUNT_ID.dkr.ecr.YOUR_AWS_REGION.amazonaws.com/shopsphere-backend:latest
+        image: 040494736757.dkr.ecr.us-east-2.amazonaws.com/shopsphere-backend:latest
         ports:
         - containerPort: 5000
         envFrom:

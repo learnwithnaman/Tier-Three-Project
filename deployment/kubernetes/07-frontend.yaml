@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: YOUR_AWS_ACCOUNT_ID.dkr.ecr.YOUR_AWS_REGION.amazonaws.com/shopsphere-frontend:latest
+        image: 040494736757.dkr.ecr.us-east-2.amazonaws.com/shopsphere-frontend:latest
         ports:
         - containerPort: 80
         resources:
